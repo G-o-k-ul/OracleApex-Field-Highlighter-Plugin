@@ -34,12 +34,10 @@ Use it to direct user attention to fields that need review, have validation issu
 ## 📁 File Structure
 
 ```
-plugin-4-field-highlighter/
+Field-highlighter/
 ├── src/
 │   ├── dynamic_action_plugin_com_oracle_ace_field_highlighter.sql  ← Plugin definition
-│   └── ace_field_highlighter_pkg.sql                               ← PL/SQL Package
-├── dist/
-│   └── install.sql
+│   └── pkg_highlighter_plugin.sql                                  ← PL/SQL Package
 └── README.md
 ```
 
@@ -49,7 +47,7 @@ plugin-4-field-highlighter/
 
 ### Step 1 – Install PL/SQL Package
 ```sql
-@src/ace_field_highlighter_pkg.sql
+@src/pkg_highlighter_plugin.sql
 ```
 
 ### Step 2 – Import Plugin into APEX
